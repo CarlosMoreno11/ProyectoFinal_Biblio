@@ -72,7 +72,7 @@ public class LibroDAO {
         Bson cambios = Updates.combine(
                 Updates.set("prestado", libro.isPrestado()),
                 Updates.set("usuarioPrestamo", libro.getUsuarioPrestamo()),
-                Updates.set("telefonoPrestamo", libro.getTelefonoPrestamo()), // <--- GUARDAMOS TEL
+                Updates.set("telefonoPrestamo", libro.getTelefonoPrestamo()), 
                 Updates.set("fechaPrestamo", libro.getFechaPrestamo()),
                 Updates.set("vecesPrestado", libro.getVecesPrestado())
         );
