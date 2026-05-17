@@ -20,7 +20,7 @@ public class LibroDAO {
     private MongoCollection<Document> coleccion;
 
     public LibroDAO() {
-    	 String uri = "mongodb+srv://adminBiblioteca11:rUQJnU6zqgeLDyWK@bibliotecapp.e8itjpk.mongodb.net/?appName=Bibliotecapp";
+    	 String uri = "mongodb+srv://adminBiblioteca11:<Password>@bibliotecapp.e8itjpk.mongodb.net/?appName=Bibliotecapp";
         
         try {
             MongoClient mongoClient = MongoClients.create(uri);
