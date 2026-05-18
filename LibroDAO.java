@@ -82,6 +82,6 @@ public class LibroDAO {
     // 4. BORRAR: Función de eliminar un libro
     public void eliminar(ObjectId id) {
         coleccion.deleteOne(eq("_id", id));
-        System.out.println("🗑️ Libro eliminado de la nube.");
+        System.out.println("Libro eliminado de la nube.");
     }
 }
