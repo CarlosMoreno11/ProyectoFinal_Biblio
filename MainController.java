@@ -211,7 +211,7 @@ public class MainController {
         List<Libro> lista = libroDAO.obtenerTodos();
         Platform.runLater(() -> {
             listaMaestra.setAll(lista);
-            long p = listaMaestra.stream().filter(Libro::isPrestado).count();
+            int p = listaMaestra.stream().filter(Libro::isPrestado).count();
             lblTotalLibros.setText("Libros: " + listaMaestra.size());
             lblLibrosPrestados.setText("Prestados: " + p);
         });
